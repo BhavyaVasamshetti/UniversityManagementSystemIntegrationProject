@@ -1,0 +1,26 @@
+<!-- update-student.component.html -->
+<div>
+    <h1>Update Student</h1>
+  
+    <form>
+      <label for="studentId">Student ID:</label>
+      <input type="text" id="studentId" [(ngModel)]="student.studentId" name="studentId" required><br>
+  
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" [(ngModel)]="student.firstName" name="firstName" required><br>
+  
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" [(ngModel)]="student.lastName" name="lastName" required><br>
+  
+      <label for="email">Email:</label>
+      <input type="text" id="email" [(ngModel)]="student.email" name="email" required><br>
+  
+      <label for="courseId">Course ID:</label>
+      <input type="text" id="courseId" [(ngModel)]="student.courseId" name="courseId" required><br>
+  
+      <input type="button" value="Update" (click)="updateStudent()">
+    </form>
+  
+    {{ msg }}
+  </div>
+  

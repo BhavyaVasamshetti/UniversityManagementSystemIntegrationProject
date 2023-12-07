@@ -1,0 +1,66 @@
+<!-- app.component.html -->
+
+<div class="head">
+  <div class="img">
+    <img src="https://tse3.mm.bing.net/th?id=OIP.GvH4WvToatzWPlRjQ_YeTAAAAA&pid=Api&P=0&h=180" alt="Image" height="200px" width="50px">
+  </div>
+  <header class="header">
+
+      <h1 align="center"> UNIVERSITY MANAGEMENT SYSTEM</h1>
+  </header>
+</div>
+
+<div class="container">
+
+  <div class="content">
+    <h3 align="center">About University Management System</h3>
+    <p>The University Management System is a comprehensive software application designed to streamline and manage various aspects of university operations, including student information, course details, and enrollment processes. This system facilitates efficient management of academic records, simplifies course administration, and ensures a seamless enrollment experience for students.</p>
+    <h3>The University Management System provides the following key features to enhance user experience:</h3>
+     <ul>
+      <li> Student information management</li>
+      <li> Course administration and detais </li> 
+      <li>  Enrollment processes and tracking</li>
+       <li>  Academic record management    </li>
+        <li>   User-friendly interface for easy navigation  </li>
+
+  
+     </ul>
+      
+      <h4> Conclusion:</h4>
+      The University Management System efficiently handles student information, course details, and enrollment processes, providing a centralized and organized approach to university management. It ensures a seamless experience for both students and administrators, contributing to the overall effectiveness and efficiency of university operations.
+  </div>
+
+  <div class="sidebarleft">
+    <div>
+      <h3>STUDENTS:</h3>
+      <p>Explore different functionalities to manage students, add new students, and update students details.</p>
+      <ul>
+        <li><a routerLink="students" routerLinkActive="active" href="#">Get All Students</a></li>
+        <li><a routerLink="create-student" routerLinkActive="active" href="#">Save Student</a></li>
+        <li><a routerLink="update-student" routerLinkActive="active" href="#">Update Student</a></li>
+      </ul>
+      <router-outlet></router-outlet>
+    </div>
+
+    <div>
+<h3>COURSES</h3>
+      <p>Explore different functionalities to manage courses, add new courses, and update course details.</p>
+      <ul>
+        <li><a routerLink="course-list" routerLinkActive="active" href="#">Course List</a></li>
+        <li><a routerLink="create-course" routerLinkActive="active" href="#">Create Course</a></li>
+        <li><a routerLink="update-course" routerLinkActive="active" href="#">Update Course</a></li>
+      </ul>
+      <router-outlet></router-outlet>
+    </div>
+
+    <div>
+      <h3>ENROLLMENTS</h3>
+      <p>Explore different functionalities to manage enrollments and add new enrollments</p>
+      <ul>
+        <li><a routerLink="enrollments" routerLinkActive="active" href="#">Get All Enrollments</a></li>
+        <li><a routerLink="create-enrollment" routerLinkActive="active" href="#">Create Enrollment</a></li>
+      </ul>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

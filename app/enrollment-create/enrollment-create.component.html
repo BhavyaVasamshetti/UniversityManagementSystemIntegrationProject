@@ -1,0 +1,11 @@
+<div>
+    <h1>Create Enrollment</h1>
+    <form>
+      Enrollment ID: <input type="text" name="enrollmentId" [(ngModel)]="enrollment.enrollmentId"><br>
+      Enrollment Date: <input type="date" name="enrollmentDate" [(ngModel)]="enrollment.enrollmentDate"><br>
+      <input type="button" value="Submit" (click)="createEnrollment()">
+    </form>
+  
+    {{ msg }}
+  </div>
+  

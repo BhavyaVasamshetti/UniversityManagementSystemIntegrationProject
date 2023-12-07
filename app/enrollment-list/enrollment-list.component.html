@@ -1,0 +1,18 @@
+<div>
+    <h1>Enrollment List</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Enrollment ID</th>
+          <th>Enrollment Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let enrollment of enrollments">
+          <td>{{ enrollment.enrollmentId }}</td>
+          <td>{{ enrollment.enrollmentDate | date }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
